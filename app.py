@@ -15,3 +15,14 @@ with st.sidebar:
 
     #Blog title
     blog_title=st.text_input("Blog Title")
+
+    # Keywords input
+    keywords = st.text_area("Keywords (comma-separated)")
+    
+    # Number of words
+    num_words = st.slider("Number of Words", min_value=100, max_value=1000, step=50)
+
+    #Number of images 
+
+    #Submit Button
+    submit_button=st.button("Genrate Blog")
